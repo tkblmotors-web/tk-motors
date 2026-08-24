@@ -1,10 +1,26 @@
-export const siteConfig = {
-  name: "TK MOTORS",
-  tagline: "Korean vehicle imports, inspected and delivered to Algeria",
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "213000000000",
-  phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY || "+213 00 00 00 00",
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@tkmotors.dz",
-  city: "Algiers, Algeria",
-  originPort: "Busan, South Korea",
-  destinationPort: "Port of Algiers",
-};
+import type { NextAuthConfig } from "next-auth";
+
+export const authConfig: NextAuthConfig = {
+  session: { strategy: "jwt" },
+  pages: {
+    signIn: "/admin/login",
+  },
+  providers: [], // real provider goes in auth.ts
+  callbacks: {
+    jwt: async ({ token, user }) => {
+      if (user) {
+        token.role = (user as { role: string }).role;
+        token.id = (user as { id: string }).id;
+      }
+      return token;
+    },
+    session: async ({ session, token }) => {
+      if (session.user) {
+        (session.user as { role?: string }).role = token.role as string;
+        (session.user as { id?: string }).id = token.id as string;
+      }
+      return session;
+    },
+  },
+} satisfies NextAuthConfig;
+
