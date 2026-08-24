@@ -3,7 +3,8 @@ import { Footer } from "@/components/Footer";
 import { VehicleCard } from "@/components/VehicleCard";
 import { InquiryForm } from "@/components/InquiryForm";
 import { prisma } from "@/lib/prisma";
-import type { Prisma } from "@prisma/client";
+import { Prisma } from '@/generated/prisma/client';
+
 
 export const dynamic = "force-dynamic";
 
