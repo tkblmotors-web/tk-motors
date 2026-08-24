@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #10192b;
+  --ink-soft: #1c2942;
+  --paper: #f6f3ec;
+  --paper-dim: #ece7da;
+  --stamp: #b23a2e;
+  --stamp-dark: #8c2c22;
+  --steel: #55677a;
+  --steel-soft: #8798a6;
+  --brass: #a9832b;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-stamp: var(--stamp);
+  --color-stamp-dark: var(--stamp-dark);
+  --color-steel: var(--steel);
+  --color-steel-soft: var(--steel-soft);
+  --color-brass: var(--brass);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-mono-plex);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+.stamp-badge {
+  font-family: var(--font-mono-plex), monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 2px solid currentColor;
+  border-radius: 2px;
+  transform: rotate(-6deg);
+  box-shadow: 0 0 0 1px currentColor inset;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
