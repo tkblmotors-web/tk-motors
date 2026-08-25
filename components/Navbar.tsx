@@ -26,8 +26,17 @@ export function Navbar() {
           >
             Contact
           </Link>
+          <a
+            href={`https://wa.me/${siteConfig.whatsappNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-sm bg-brass text-ink px-4 py-2 hover:opacity-90 transition-colors"
+          >
+            WhatsApp
+          </a>
         </nav>
       </div>
     </header>
   );
 }
+
