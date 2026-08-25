@@ -1,10 +1,9 @@
-import { defineConfig } from "prisma/config";
-import path from "node:path";
+import "dotenv/config";
+import { defineConfig, env } from "prisma/config";
 
 export default defineConfig({
-  schema: path.join("prisma", "schema.prisma"),
+  schema: "prisma/schema.prisma",
   datasource: {
-    url: process.env.POSTGRES_PRISMA_URL,
-    directUrl: process.env.POSTGRES_URL_NON_POOLING,
+    url: env("POSTGRES_PRISMA_URL"),
   },
 });
