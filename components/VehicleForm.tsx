@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -176,9 +174,12 @@ export function VehicleForm({
             <label className={labelClass}>Year</label>
             <input
               required
-              type="number"
+              type="text"
+              inputMode="numeric"
               value={values.year}
-              onChange={(e) => set("year", Number(e.target.value))}
+              onChange={(e) =>
+                set("year", Number(e.target.value.replace(/[^\d]/g, "")) || 0)
+              }
               className={inputClass}
             />
           </div>
@@ -186,9 +187,12 @@ export function VehicleForm({
             <label className={labelClass}>Price (DZD)</label>
             <input
               required
-              type="number"
+              type="text"
+              inputMode="numeric"
               value={values.priceDZD}
-              onChange={(e) => set("priceDZD", Number(e.target.value))}
+              onChange={(e) =>
+                set("priceDZD", Number(e.target.value.replace(/[^\d]/g, "")) || 0)
+              }
               className={inputClass}
             />
           </div>
@@ -196,9 +200,12 @@ export function VehicleForm({
             <label className={labelClass}>Mileage (km)</label>
             <input
               required
-              type="number"
+              type="text"
+              inputMode="numeric"
               value={values.mileageKm}
-              onChange={(e) => set("mileageKm", Number(e.target.value))}
+              onChange={(e) =>
+                set("mileageKm", Number(e.target.value.replace(/[^\d]/g, "")) || 0)
+              }
               className={inputClass}
             />
           </div>
@@ -311,7 +318,7 @@ export function VehicleForm({
                 <button
                   type="button"
                   onClick={() => removeImage(url)}
-                  className="absolute top-1 right-1 bg-stamp text-paper text-xs w-5 h-5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute top-1 right-1 bg-stamp text-paper text-xs w-5 h-5 flex items-center justify-center rounded-full"
                 >
                   ×
                 </button>
@@ -354,7 +361,7 @@ export function VehicleForm({
         <button
           type="submit"
           disabled={saving || uploading}
-          className="bg-ink text-paper px-6 py-2.5 font-semibold hover:bg-stamp transition-colors disabled:opacity-50"
+          className="bg-ink text-paper px-6 py-2.5 font-semibold hover:bg-stamp transition-colors"
         >
           {saving ? "Saving…" : initial?.id ? "Save changes" : "Create vehicle"}
         </button>
