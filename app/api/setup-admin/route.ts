@@ -14,12 +14,18 @@ export async function GET(request: Request) {
   const password = process.env.SEED_ADMIN_PASSWORD!;
   const name = process.env.SEED_ADMIN_NAME || "TK Motors Admin";
 
+  const passwordHash = await bcrypt.hash(password, 12);
+
   const existing = await prisma.user.findUnique({ where: { email } });
+
   if (existing) {
-    return NextResponse.json({ message: `Admin ${email} already exists.` });
+    await prisma.user.update({
+      where: { email },
+      data: { passwordHash, role: "ADMIN" },
+    });
+    return NextResponse.json({ message: `Password reset for: ${email}` });
   }
 
-  const passwordHash = await bcrypt.hash(password, 12);
   await prisma.user.create({
     data: { name, email, passwordHash, role: "ADMIN" },
   });
