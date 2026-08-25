@@ -5,7 +5,7 @@ export const siteConfig = {
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY || "+213 00 00 00 00",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "tkbl.motors@gmail.com",
   city: "Algiers, Algeria",
-  originPort: "inchen, South Korea",
+  originPort: "inchuon, South Korea",
   destinationPort: "Port of Algeria",
 };
 
