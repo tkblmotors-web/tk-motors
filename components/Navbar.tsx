@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/lib/config";
 import { AlertTicker } from "@/components/AlertTicker";
 
@@ -8,19 +9,24 @@ export function Navbar() {
       <AlertTicker />
       <div className="mx-auto max-w-6xl px-5 sm:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-baseline gap-2">
-          <span className="font-display font-semibold text-xl tracking-tight text-ink">
-            {siteConfig.name}
-          </span>
+          <Image
+            src="/logo.png"
+            alt={siteConfig.name}
+            width={160}
+            height={53}
+            className="h-9 w-auto"
+            priority
+          />
           <span className="hidden sm:inline text-xs font-mono uppercase tracking-widest text-steel">
-            South Korea → Algeria
+            Corée du Sud → Algérie
           </span>
         </Link>
         <nav className="flex items-center gap-6 text-sm font-medium">
           <Link href="/vehicles" className="hover:text-stamp transition-colors">
-            Inventory
+            Inventaire
           </Link>
           <Link href="/import-process" className="hidden sm:inline hover:text-stamp transition-colors">
-            Import process
+            Processus d&apos;importation
           </Link>
           <Link
             href="/vehicles#contact"
