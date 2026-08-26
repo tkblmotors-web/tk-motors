@@ -46,6 +46,14 @@ body {
   transform: rotate(-6deg);
   box-shadow: 0 0 0 1px currentColor inset;
 }
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker 30s linear infinite;
+}
 
 @media (prefers-reduced-motion: reduce) {
   * {
