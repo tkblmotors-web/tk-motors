@@ -2,9 +2,9 @@
 // Edit the messages array below to update what's displayed.
 // Each entry is one message; they're joined with a separator and scroll continuously.
 const messages: string[] = [
-  "🚢 Placeholder: Port of Algiers customs update — contact us for current clearance times",
-  "🚗 Placeholder: New arrivals landing this month — ask about availability",
-  "📞 Placeholder: WhatsApp us for same-day quotes on Korean imports",
+  "🚨 info nouvelle adresse Nouvelle ville UV 10 en face de l`hopital melitaire",
+  "Nouveautés disponibles ce mois-ci — renseignez-vous sur les disponibilités",
+  "📞 WhatsApp us +82 10-2510-7410 / 0558 50 93 65",
 ];
 
 export function AlertTicker() {
