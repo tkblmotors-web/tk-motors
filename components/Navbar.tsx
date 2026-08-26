@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/config";
 
+import { AlertTicker } from "@/components/AlertTicker";
+// ...
+<header className="sticky top-0 z-40 border-b border-ink/10 bg-paper/95 backdrop-blur">
+  <AlertTicker />
+  <div className="mx-auto max-w-6xl px-5 sm:px-8 h-16 flex items-center justify-between">
+
 export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-paper/95 backdrop-blur">
