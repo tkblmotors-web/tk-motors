@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { WhatsAppFloatButton } from "@/components/WhatsAppFloatButton";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -22,18 +23,21 @@ const plexMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TK MOTORS — Korean Vehicle Imports to Algeria",
+  title: "TK MOTORS — Importation de véhicules coréens vers l'Algérie",
   description:
-    "TK MOTORS imports inspected, auction-grade vehicles from South Korea to Algeria. Browse current inventory or request a vehicle sourced to order.",
+    "TK MOTORS importe des véhicules inspectés, de qualité enchère, depuis la Corée du Sud vers l'Algérie. Consultez l'inventaire actuel ou demandez un véhicule sur commande.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="fr"
       className={`${fraunces.variable} ${inter.variable} ${plexMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-paper text-ink">{children}</body>
+      <body className="min-h-full flex flex-col bg-paper text-ink">
+        {children}
+        <WhatsAppFloatButton />
+      </body>
     </html>
   );
 }
