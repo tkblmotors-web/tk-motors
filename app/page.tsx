@@ -22,7 +22,7 @@ export default async function Home() {
         <section className="bg-ink text-paper">
           <div className="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
             <div className="font-mono text-xs uppercase tracking-[0.25em] text-brass mb-6">
-              Manifeste d&apos;importation &middot; Busan &rarr; Alger
+              Manifeste d&apos;importation &middot; inchuon &rarr; Alger
             </div>
             <h1 className="font-display text-4xl sm:text-6xl leading-[1.05] max-w-3xl mb-6">
               Chaque véhicule que nous expédions porte son historique complet avec lui.
