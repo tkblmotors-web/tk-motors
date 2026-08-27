@@ -1,11 +1,10 @@
 generator client {
   provider = "prisma-client-js"
-output   = "../generated/prisma"
+  output   = "../generated/prisma"
 }
 
 datasource db {
-  provider  = "postgresql"
-
+  provider = "postgresql"
 }
 
 enum Role {
@@ -49,7 +48,7 @@ model Vehicle {
   make            String
   model           String
   trim            String?
-  year             Int
+  year            Int
   priceDZD        Int
   mileageKm       Int
   fuelType        FuelType      @default(PETROL)
@@ -60,6 +59,7 @@ model Vehicle {
   vin             String?
   status          VehicleStatus @default(DRAFT)
   featured        Boolean       @default(false)
+  onPromo         Boolean       @default(false)
   description     String?       @db.Text
   features        String[]      @default([])
   arrivalDate     DateTime?
