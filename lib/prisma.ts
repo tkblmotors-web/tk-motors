@@ -6,7 +6,7 @@ const globalForPrisma = globalThis as unknown as {
 };
 
 const adapter = new PrismaPg({
-  connectionString: process.env.POSTGRES_URL_NON_POOLING,
+  connectionString: process.env.DATABASE_URL_UNPOOLED,
 });
 
 export const prisma =
@@ -16,5 +16,3 @@ export const prisma =
 if (process.env.NODE_ENV !== "production") {
   globalForPrisma.prisma = prisma;
 }
-
-
