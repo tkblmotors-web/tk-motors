@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { AdminNav } from "@/components/AdminNav";
 import { VehicleForm } from "@/components/VehicleForm";
 import { prisma } from "@/lib/prisma";
-
+export const dynamic = "force-dynamic";
 export default async function EditVehiclePage({
   params,
 }: {
