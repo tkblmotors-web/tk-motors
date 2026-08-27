@@ -16,6 +16,7 @@ export const vehicleSchema = z.object({
   vin: z.string().optional().nullable(),
   status: z.enum(["DRAFT", "PUBLISHED", "SOLD", "RESERVED"]).default("DRAFT"),
   featured: z.coerce.boolean().default(false),
+  onPromo: z.coerce.boolean().default(false),
   description: z.string().optional().nullable(),
   features: z.array(z.string()).default([]),
   arrivalDate: z.string().optional().nullable(),
