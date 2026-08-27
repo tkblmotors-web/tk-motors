@@ -60,6 +60,10 @@ export default async function Home() {
           </div>
         </section>
 
+        <div className="mx-auto max-w-6xl px-5 sm:px-8 py-14">
+          <SocialProofBanner />
+        </div>
+
         <section className="mx-auto max-w-6xl px-5 sm:px-8 py-16">
           <div className="flex items-end justify-between mb-8">
             <div>
