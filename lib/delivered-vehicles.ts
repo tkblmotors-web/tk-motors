@@ -17,7 +17,7 @@ export const DELIVERED_VEHICLES: DeliveredVehicle[] = [
   // {
   //   id: "1",
   //   vehicleName: "Kia picanto 2023",
-  //   imageUrl: "/delivered/kia-sportage-constantine.jpg",
+  //   imageUrl: "/delivered/FullSizeRender.jpeg",
   //   clientCity: "biskra",
   //   deliveredMonth: "juillet 2026",
   // },
