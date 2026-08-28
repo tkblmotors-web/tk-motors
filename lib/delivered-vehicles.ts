@@ -16,9 +16,9 @@ export const DELIVERED_VEHICLES: DeliveredVehicle[] = [
   // Example — replace with real deliveries:
   // {
   //   id: "1",
-  //   vehicleName: "Kia Sportage 2023",
+  //   vehicleName: "Kia picanto 2023",
   //   imageUrl: "/delivered/kia-sportage-constantine.jpg",
-  //   clientCity: "Constantine",
-  //   deliveredMonth: "Août 2026",
+  //   clientCity: "biskra",
+  //   deliveredMonth: "juillet 2026",
   // },
 ];
