@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/config";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-40 border-b border-ink/10 bg-paper/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-[#1E4FD6]">
       <div className="mx-auto max-w-7xl px-5 sm:px-10 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-baseline gap-2">
           <Image
@@ -15,8 +15,8 @@ export function Navbar() {
             className="h-12 w-auto"
             priority
           />
-          <span className="hidden sm:inline text-xs font-mono uppercase tracking-widest text-steel">
-            Corée du Sud → Algérie
+          <span className="hidden sm:inline text-xs font-mono uppercase tracking-widest text-white/70">
+            🇰🇷 Corée du Sud → 🇩🇿 Algérie
           </span>
         </Link>
         <nav className="flex items-center gap-6 text-sm font-medium">
