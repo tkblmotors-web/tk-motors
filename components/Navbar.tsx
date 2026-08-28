@@ -21,7 +21,7 @@ export function Navbar() {
         </Link>
         <nav className="flex items-center gap-6 text-sm font-medium text-white">
           <Link href="/vehicles" className="hover:text-white/70 transition-colors">
-            Véhicules occasion
+            Véhicules 
           </Link>
           <Link href="/import-process" className="hidden sm:inline hover:text-white/70 transition-colors">
             Processus d&apos;importation
