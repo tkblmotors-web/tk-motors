@@ -9,6 +9,9 @@ import { prisma } from "@/lib/prisma";
 import { RecentlyViewedSection } from "@/components/home/RecentlyViewedSection";
 import { DeliveredRecentlySection } from "@/components/home/DeliveredRecentlySection";
 import { CustomOrderButton } from "@/components/custom-order/CustomOrderButton";
+import { RecentlyViewedSection } from "@/components/home/RecentlyViewedSection";
+import { DeliveredRecentlySection } from "@/components/home/DeliveredRecentlySection";
+import { CustomOrderButton } from "@/components/custom-order/CustomOrderButton";
 
 // somewhere near your hero/CTA area:
 <CustomOrderButton />
