@@ -9,16 +9,7 @@ import { prisma } from "@/lib/prisma";
 import { RecentlyViewedSection } from "@/components/home/RecentlyViewedSection";
 import { DeliveredRecentlySection } from "@/components/home/DeliveredRecentlySection";
 import { CustomOrderButton } from "@/components/custom-order/CustomOrderButton";
-import { RecentlyViewedSection } from "@/components/home/RecentlyViewedSection";
-import { DeliveredRecentlySection } from "@/components/home/DeliveredRecentlySection";
-import { CustomOrderButton } from "@/components/custom-order/CustomOrderButton";
 
-// somewhere near your hero/CTA area:
-<CustomOrderButton />
-
-// further down the page:
-<RecentlyViewedSection />
-<DeliveredRecentlySection />
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
@@ -39,6 +30,10 @@ export default async function Home() {
 
         <div className="mx-auto max-w-6xl px-5 sm:px-8 py-14">
           <SocialProofBanner />
+        </div>
+
+        <div className="mx-auto max-w-6xl px-5 sm:px-8 flex justify-center sm:justify-start">
+          <CustomOrderButton />
         </div>
 
         <section className="mx-auto max-w-6xl px-5 sm:px-8 py-16">
@@ -100,6 +95,9 @@ export default async function Home() {
             </div>
           </div>
         </section>
+
+        <RecentlyViewedSection />
+        <DeliveredRecentlySection />
       </main>
       <Footer />
     </>
