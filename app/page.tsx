@@ -1,3 +1,4 @@
+import { HeroBanner } from "@/components/HeroBanner";
 import Image from "next/image";
 import SocialProofBanner from "@/components/SocialProofBanner";
 import Link from "next/link";
