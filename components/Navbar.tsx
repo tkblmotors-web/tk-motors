@@ -23,13 +23,13 @@ export function Navbar() {
         </Link>
         <nav className="flex items-center gap-6 text-sm font-medium">
           <Link href="/vehicles" className="hover:text-stamp transition-colors">
-            Inventaire
+            Véhicules occasion
           </Link>
           <Link href="/import-process" className="hidden sm:inline hover:text-stamp transition-colors">
             Processus d&apos;importation
           </Link>
           <Link
-            href="/vehicles#contact"
+            href="/contact"
             className="rounded-sm bg-ink text-paper px-4 py-2 hover:bg-stamp transition-colors"
           >
             Contact
