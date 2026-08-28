@@ -13,7 +13,7 @@ export interface DeliveredVehicle {
 }
 
 export const DELIVERED_VEHICLES: DeliveredVehicle[] = [
-   Example — replace with real deliveries:
+   
    {
    id: "1",
    vehicleName: "Kia picanto 2023",
