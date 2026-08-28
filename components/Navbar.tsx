@@ -6,15 +6,14 @@ import { AlertTicker } from "@/components/AlertTicker";
 export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-paper/95 backdrop-blur">
-      <AlertTicker />
-      <div className="mx-auto max-w-6xl px-5 sm:px-8 h-16 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-5 sm:px-10 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-baseline gap-2">
           <Image
             src="/logo.png"
             alt={siteConfig.name}
-            width={160}
-            height={53}
-            className="h-9 w-auto"
+            width={200}
+            height={66}
+            className="h-12 w-auto"
             priority
           />
           <span className="hidden sm:inline text-xs font-mono uppercase tracking-widest text-steel">
@@ -44,6 +43,7 @@ export function Navbar() {
           </a>
         </nav>
       </div>
+      <AlertTicker />
     </header>
   );
 }
