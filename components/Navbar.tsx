@@ -19,16 +19,16 @@ export function Navbar() {
             🇰🇷 Corée du Sud → 🇩🇿 Algérie
           </span>
         </Link>
-        <nav className="flex items-center gap-6 text-sm font-medium">
-          <Link href="/vehicles" className="hover:text-stamp transition-colors">
+        <nav className="flex items-center gap-6 text-sm font-medium text-white">
+          <Link href="/vehicles" className="hover:text-white/70 transition-colors">
             Véhicules occasion
           </Link>
-          <Link href="/import-process" className="hidden sm:inline hover:text-stamp transition-colors">
+          <Link href="/import-process" className="hidden sm:inline hover:text-white/70 transition-colors">
             Processus d&apos;importation
           </Link>
           <Link
             href="/contact"
-            className="rounded-sm bg-ink text-paper px-4 py-2 hover:bg-stamp transition-colors"
+            className="rounded-sm bg-white text-[#1E4FD6] px-4 py-2 hover:bg-white/90 transition-colors"
           >
             Contact
           </Link>
