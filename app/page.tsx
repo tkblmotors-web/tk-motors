@@ -21,58 +21,8 @@ export default async function Home() {
     <>
       <Navbar />
       <main className="flex-1">
-        <section className="relative isolate overflow-hidden text-paper">
-          <Image
-            src="/showroom.jpg"
-            alt="Showroom TK Motors"
-            fill
-            priority
-            className="object-cover -z-10"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#0B2E68]/92 via-[#123E82]/90 to-[#0B2E68]/95" />
+        <HeroBanner />
 
-          <div className="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
-            <div className="font-mono text-xs uppercase tracking-[0.25em] text-brass mb-6">
-              Manifeste d&apos;importation &middot; inchuon &rarr; Alger
-            </div>
-            <h1 className="font-display text-4xl sm:text-6xl leading-[1.05] max-w-3xl mb-6">
-              Chaque véhicule que nous expédions porte son historique complet avec lui.
-            </h1>
-            <p className="text-paper/70 max-w-xl text-lg mb-6">
-              {siteConfig.name} sélectionne des véhicules inspectés directement dans les
-              enchères sud-coréennes, gère le dédouanement, et livre en Algérie avec un
-              rapport d&apos;état documenté pour chaque véhicule.
-            </p>
-            <p className="text-paper/80 text-sm font-semibold mb-10">
-              📍 Nouvelle ville UV10, à côté de l&apos;hôpital militaire, Constantine
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/vehicles"
-                className="bg-stamp hover:bg-stamp-dark transition-colors px-6 py-3 font-semibold"
-              >
-                Véhicules occasion
-              </Link>
-              <Link
-                href="/import-process"
-                className="border border-paper/30 hover:border-paper transition-colors px-6 py-3 font-semibold"
-              >
-                Comment fonctionne l&apos;importation
-              </Link>
-            </div>
-
-            <div className="mt-16 flex items-center gap-4 text-sm font-mono text-paper/60">
-              <span>{siteConfig.originPort}</span>
-              <span className="flex-1 h-px bg-paper/20 relative">
-                <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-brass">
-                  &#9972;
-                </span>
-              </span>
-              <span>{siteConfig.destinationPort}</span>
-            </div>
-          </div>
-        </section>
 
         <div className="mx-auto max-w-6xl px-5 sm:px-8 py-14">
           <SocialProofBanner />
