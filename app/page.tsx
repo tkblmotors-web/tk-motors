@@ -1,12 +1,11 @@
-import { HeroBanner } from "@/components/HeroBanner";
-import Image from "next/image";
 import SocialProofBanner from "@/components/SocialProofBanner";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { HeroBanner } from "@/components/HeroBanner";
+import { AlertTicker } from "@/components/AlertTicker";
 import { VehicleCard } from "@/components/VehicleCard";
 import { prisma } from "@/lib/prisma";
-import { siteConfig } from "@/lib/config";
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +23,7 @@ export default async function Home() {
       <main className="flex-1">
         <HeroBanner />
 
+        <AlertTicker />
 
         <div className="mx-auto max-w-6xl px-5 sm:px-8 py-14">
           <SocialProofBanner />
