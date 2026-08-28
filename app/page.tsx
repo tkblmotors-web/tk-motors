@@ -6,7 +6,16 @@ import { HeroBanner } from "@/components/HeroBanner";
 import { AlertTicker } from "@/components/AlertTicker";
 import { VehicleCard } from "@/components/VehicleCard";
 import { prisma } from "@/lib/prisma";
+import { RecentlyViewedSection } from "@/components/home/RecentlyViewedSection";
+import { DeliveredRecentlySection } from "@/components/home/DeliveredRecentlySection";
+import { CustomOrderButton } from "@/components/custom-order/CustomOrderButton";
 
+// somewhere near your hero/CTA area:
+<CustomOrderButton />
+
+// further down the page:
+<RecentlyViewedSection />
+<DeliveredRecentlySection />
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
