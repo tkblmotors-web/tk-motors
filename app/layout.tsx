@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import { WhatsAppFloatButton } from "@/components/WhatsAppFloatButton";
 import "./globals.css";
+import { PromoPopupProvider } from "@/components/promo-popup/PromoPopupProvider";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-paper text-ink">
         {children}
         <WhatsAppFloatButton />
+        <PromoPopupProvider />
       </body>
     </html>
   );
