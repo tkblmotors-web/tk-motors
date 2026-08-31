@@ -1,0 +1,14 @@
+{
+  "Home": {
+    "stockLabel": "Stock actuel",
+    "recentArrivals": "Arrivées récentes",
+    "seeUsedVehicles": "Véhicules occasion →",
+    "noVehicles": "De nouveaux véhicules sont ajoutés régulièrement — revenez bientôt, ou contactez-nous pour la recherche d'un modèle spécifique.",
+    "step1Title": "01 — Sélection",
+    "step1Text": "Les véhicules sont sélectionnés directement auprès des maisons de vente aux enchères coréennes, sur la base de leurs rapports de grade et d'inspection.",
+    "step2Title": "02 — Expédition",
+    "step2Text": "Nous gérons la documentation d'export, le fret maritime, et le dédouanement en Algérie.",
+    "step3Title": "03 — Livraison",
+    "step3Text": "Récupérez votre véhicule dans notre showroom avec tous les documents et une inspection avant livraison."
+  }
+}
