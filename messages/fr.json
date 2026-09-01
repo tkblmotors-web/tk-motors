@@ -1,3 +1,11 @@
+"Contact": {
+  "title": "Contactez-nous !",
+  "intro": "Besoin de connaître les démarches, d'obtenir des informations sur un véhicule, ou de faire une demande particulière ? Vous êtes au bon endroit — TK Motors, votre contact export de véhicules vers l'Algérie.",
+  "address": "📍 Nouvelle ville UV10, à côté de l'hôpital militaire, Constantine",
+  "phoneAlgeria": "📞 Algérie :",
+  "phoneKorea": "📞 Corée du Sud :",
+  "email": "✉️"
+}
 "Vehicles": {
   "inventoryLabel": "Inventaire",
   "title": "Véhicules disponibles",
