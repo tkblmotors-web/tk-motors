@@ -1,3 +1,15 @@
+"Vehicles": {
+  "inventoryLabel": "المخزون",
+  "title": "السيارات المتوفرة",
+  "searchLabel": "بحث",
+  "searchPlaceholder": "الطراز، الماركة…",
+  "makeLabel": "الماركة",
+  "allMakes": "جميع الماركات",
+  "minPrice": "الحد الأدنى (دج)",
+  "maxPrice": "الحد الأقصى (دج)",
+  "applyFilters": "تطبيق الفلاتر",
+  "noResults": "لا توجد سيارات مطابقة لهذه الفلاتر حاليًا."
+}
 {
   "Home": {
     "stockLabel": "المخزون الحالي",
