@@ -10,5 +10,11 @@
     "step2Text": "Nous gérons la documentation d'export, le fret maritime, et le dédouanement en Algérie.",
     "step3Title": "03 — Livraison",
     "step3Text": "Récupérez votre véhicule dans notre showroom avec tous les documents et une inspection avant livraison."
+  },
+  "Nav": {
+    "tagline": "🇰🇷 Corée du Sud → 🇩🇿 Algérie",
+    "vehicles": "Véhicules",
+    "importProcess": "Processus d'importation",
+    "contact": "Contact"
   }
 }
