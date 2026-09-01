@@ -1,3 +1,16 @@
+"Vehicles": {
+  "inventoryLabel": "Inventaire",
+  "title": "Véhicules disponibles",
+  "searchLabel": "Recherche",
+  "searchPlaceholder": "Modèle, marque…",
+  "makeLabel": "Marque",
+  "allMakes": "Toutes les marques",
+  "minPrice": "Min DA",
+  "maxPrice": "Max DA",
+  "applyFilters": "Appliquer les filtres",
+  "noResults": "Aucun véhicule ne correspond à ces filtres pour le moment."
+}
+
 {
   "Home": {
     "stockLabel": "Stock actuel",
