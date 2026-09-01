@@ -10,8 +10,8 @@ export async function Footer() {
         <div className="font-mono uppercase tracking-widest text-xs text-brass mb-2">
           {t("contactLabel")}
         </div>
-        <p className="text-ink/70">{siteConfig.phoneDisplay}</p>
-        <p className="text-ink/70">{siteConfig.email}</p>
+        <p className="text-ink/70" dir="ltr">{siteConfig.phoneDisplay}</p>
+        <p className="text-ink/70" dir="ltr">{siteConfig.email}</p>
         <p className="text-ink/70">{siteConfig.address}</p>
         <div className="mt-3 flex flex-wrap gap-2">
           <a
