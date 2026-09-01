@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { Barlow_Condensed, Inter, JetBrains_Mono } from "next/font/google";
 import { WhatsAppFloatButton } from "@/components/WhatsAppFloatButton";
 import "./globals.css";
 import { PromoPopupProvider } from "@/components/promo-popup/PromoPopupProvider";
 
-const fraunces = Fraunces({
+const barlowCondensed = Barlow_Condensed({
   variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  weight: ["500", "600", "700", "800"],
+  style: ["normal"],
 });
 
 const inter = Inter({
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="fr"
-      className={`${fraunces.variable} ${inter.variable} ${plexMono.variable} h-full antialiased`}
+      className={`${barlowCondensed.variable} ${inter.variable} ${plexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-paper text-ink">
         {children}
