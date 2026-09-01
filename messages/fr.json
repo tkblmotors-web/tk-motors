@@ -1,3 +1,30 @@
+"ImportProcess": {
+  "heroTitle": "Notre processus d'importation",
+  "heroSubtitle": "De la Corée du Sud à l'Algérie : un accompagnement complet, transparent et sans stress, à chaque étape de votre projet automobile.",
+  "welcomeTitle": "Bienvenue chez TK Motors",
+  "intro1": "TK Motors est une entreprise spécialisée dans l'exportation de véhicules neufs et d'occasion depuis la Corée du Sud (Busan) vers l'Algérie. Nous simplifions chaque étape du processus, avec un service clé en main qui englobe tout : de la sélection du véhicule au transport maritime, en passant par les formalités administratives et douanières.",
+  "missionLabel": "Notre mission",
+  "intro2": "est de rendre l'importation de véhicules simple et sans tracas. Nous prenons en charge toutes les démarches nécessaires — sélection, achat, inspection, documentation et expédition — pour vous offrir un accompagnement de A à Z, sans stress et sans mauvaise surprise.",
+  "valuesLabel": "Nos valeurs",
+  "intro3": ": nous plaçons la confiance et la satisfaction de nos client(e)s au cœur de notre approche. TK Motors s'engage à offrir un service transparent et fiable, adapté aux besoins spécifiques de chaque client. Grâce à notre expertise du marché coréen et de la logistique internationale, nous garantissons une importation fluide et sécurisée jusqu'en Algérie.",
+  "whyTitle": "Pourquoi choisir TK Motors ?",
+  "why1Title": "Expertise du marché coréen",
+  "why1Text": "Nous maîtrisons le marché automobile sud-coréen — enchères, concessionnaires et réseaux locaux à Busan — pour vous proposer les meilleurs véhicules aux meilleures conditions.",
+  "why2Title": "Gain de temps",
+  "why2Text": "Nous nous occupons de toutes les démarches d'achat, d'inspection et d'expédition, simplifiant un processus qui peut être long et complexe pour qui n'y est pas familiarisé.",
+  "why3Title": "Réseau de partenaires fiable",
+  "why3Text": "TK Motors dispose d'un réseau de partenaires de confiance (transporteurs maritimes, transitaires, inspecteurs) pour garantir une coordination optimale à chaque étape.",
+  "why4Title": "Optimisation des coûts",
+  "why4Text": "Nous sélectionnons soigneusement chaque véhicule pour offrir un excellent rapport qualité-prix, avec une transparence totale sur les frais liés à l'importation.",
+  "why5Title": "Simplicité et tranquillité d'esprit",
+  "why5Text": "Suivez tout le processus en toute sérénité : nous vous accompagnons à chaque étape, sans avoir à gérer les détails administratifs complexes.",
+  "why6Title": "Accompagnement personnalisé",
+  "why6Text": "De la sélection du véhicule jusqu'à son arrivée en Algérie, TK Motors vous offre un suivi sur mesure et répond à toutes vos questions.",
+  "ctaTitle": "Vous souhaitez en savoir plus ?",
+  "ctaText": "Nous sommes là pour répondre à toutes vos questions et vous guider dans chaque étape de votre projet auto.",
+  "ctaButton": "Contactez-nous"
+}
+
 "Footer": {
   "contactLabel": "Contact",
   "copyright": "Tous les véhicules sont inspectés avant expédition."
