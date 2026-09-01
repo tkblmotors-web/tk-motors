@@ -102,15 +102,21 @@ export default async function ContactPage({
               <p className="font-semibold text-ink">{t("address")}</p>
               <p className="text-ink/80">
                 {t("phoneAlgeria")}{" "}
-                <a href="tel:+213558509365" className="hover:text-stamp">0558 50 93 65</a>
+                <a href="tel:+213558509365" dir="ltr" className="hover:text-stamp inline-block">
+                  0558 50 93 65
+                </a>
               </p>
               <p className="text-ink/80">
                 {t("phoneKorea")}{" "}
-                <a href="tel:+821025107410" className="hover:text-stamp">+82 10-2510-7410</a>
+                <a href="tel:+821025107410" dir="ltr" className="hover:text-stamp inline-block">
+                  +82 10-2510-7410
+                </a>
               </p>
               <p className="text-ink/80">
                 {t("email")}{" "}
-                <a href="mailto:tkbl.motors@gmail.com" className="hover:text-stamp">tkbl.motors@gmail.com</a>
+                <a href="mailto:tkbl.motors@gmail.com" dir="ltr" className="hover:text-stamp inline-block">
+                  tkbl.motors@gmail.com
+                </a>
               </p>
             </div>
           </div>
