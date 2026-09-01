@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 const SOCIALS = [
   { name: "Facebook", href: "https://www.facebook.com/share/1ExMVPukM1/?mibextid=wwXIfr" },
@@ -49,19 +50,23 @@ const ICONS: Record<string, React.ReactNode> = {
   ),
 };
 
-export default function ContactPage() {
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("Contact");
+
   return (
     <>
       <Navbar />
       <main className="flex-1">
         <section className="bg-ink text-paper">
           <div className="mx-auto max-w-6xl px-5 sm:px-8 py-16 sm:py-20">
-            <h1 className="font-display text-4xl sm:text-5xl mb-4">Contactez-nous !</h1>
-            <p className="text-paper/70 max-w-2xl text-lg">
-              Besoin de connaître les démarches, d&apos;obtenir des informations sur un
-              véhicule, ou de faire une demande particulière ? Vous êtes au bon
-              endroit — TK Motors, votre contact export de véhicules vers l&apos;Algérie.
-            </p>
+            <h1 className="font-display text-4xl sm:text-5xl mb-4">{t("title")}</h1>
+            <p className="text-paper/70 max-w-2xl text-lg">{t("intro")}</p>
           </div>
         </section>
 
@@ -94,17 +99,18 @@ export default function ContactPage() {
             </div>
 
             <div className="mt-8 space-y-3 text-center lg:text-left">
-              <p className="font-semibold text-ink">
-                📍 Nouvelle ville UV10, à côté de l&apos;hôpital militaire, Constantine
+              <p className="font-semibold text-ink">{t("address")}</p>
+              <p className="text-ink/80">
+                {t("phoneAlgeria")}{" "}
+                <a href="tel:+213558509365" className="hover:text-stamp">0558 50 93 65</a>
               </p>
               <p className="text-ink/80">
-                📞 Algérie : <a href="tel:+213558509365" className="hover:text-stamp">0558 50 93 65</a>
+                {t("phoneKorea")}{" "}
+                <a href="tel:+821025107410" className="hover:text-stamp">+82 10-2510-7410</a>
               </p>
               <p className="text-ink/80">
-                📞 Corée du Sud : <a href="tel:+821025107410" className="hover:text-stamp">+82 10-2510-7410</a>
-              </p>
-              <p className="text-ink/80">
-                ✉️ <a href="mailto:tkbl.motors@gmail.com" className="hover:text-stamp">tkbl.motors@gmail.com</a>
+                {t("email")}{" "}
+                <a href="mailto:tkbl.motors@gmail.com" className="hover:text-stamp">tkbl.motors@gmail.com</a>
               </p>
             </div>
           </div>
