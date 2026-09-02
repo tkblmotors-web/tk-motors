@@ -138,7 +138,7 @@ export default async function VehiclesPage({
                 {t("noResults")}
               </div>
             ) : (
-              <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 mb-12">
+              <div className="columns-1 sm:columns-2 xl:columns-3 gap-6 mb-12">
                 {vehicles.map((v) => (
                   <VehicleCard key={v.id} vehicle={v} />
                 ))}
